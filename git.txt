@@ -1,0 +1,22 @@
+local - pc
+remote-github
+remoteurl-server
+private and public key- Private key is just for our pc where as public key is for us to access github and connect it.
+
+
+
+
+
+
+
+
+
+
+
+
+gitignore-it doesn't track the otherwise pushed git codes, only the part where gitignore is applied the trackking doesn't occur
+
+
+public/private key:Enter file in which to save the key (C:\Users\Ismri/.ssh/id_ed25519): 
+
+public key to access github 

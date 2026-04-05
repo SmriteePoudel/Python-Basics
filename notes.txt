@@ -1,0 +1,43 @@
+create environment by : python -m venv env
+ pep8 styling guidelines for managing code structure
+ NameError is caused when we try to access a variable that is not defined.
+ a=4
+ print(name) # NameError
+
+ 
+# wrong type causes TypeError
+name = hari
+value = 8
+#print(name + value)  # cannot concatenate string and int
+
+Comparision operator can't be used in strings
+ OR= Any one true all condition true
+ And= Any one condition false all condition false
+ Not= Opposite of the given condition 
+#IndexError 
+Index out of range 
+ 
+Single line IF
+Both condition are checked in one line itself
+
+Nested IF
+If can be in middle of another if elif blocks for multiple number of times.
+
+----------List----------------
+
+
+#To add data we have 3 ways 
+# 1.append-adds data at last, takes only one value
+# 2. insert- adds at any index 
+# 3. extends- mixes 2 list doesn't create new list. Make changes in either on of the list  
+# 4.concat-mixes 2 list, doesn't change data creates new list.Old list os as it is.
+
+md-markdown
+
+
+Technology
+Ollama-Can create chatgpt
+Ollama+Python+Streamlit
+huggingface
+Ollama+paidmodels
+Playright
