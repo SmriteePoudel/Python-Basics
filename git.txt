@@ -1,7 +1,7 @@
 local - pc
 remote-github
 remoteurl-server
-private and public key- Private key is just for our pc where as public key is for us to access github and connect it.
+private and public key- Private key is just for our pc whereas public key is for us to access github and connect it.
 
 
 
@@ -24,10 +24,14 @@ public key to access github
 
 git init .
 git add .
+git add //filename
 git status 
 gitignore
 git commit -m "...."
 // encrytpted and stored in .git
+git diff // what changes we made
+git reset --hard // all the modified changes are removed 
+
 
 git remote add origin // ssh url
 git remote -v // variable name list for example: origin
@@ -37,4 +41,11 @@ git branch
 git branch -M // rename branch 
 
 git push origin main 
+
+.......Creating Branch and working on it..........
+git branch 
+git branch // branch name
+git checkout // branch name 
+
+
 

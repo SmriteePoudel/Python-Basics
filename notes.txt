@@ -41,3 +41,4 @@ Ollama+Python+Streamlit
 huggingface
 Ollama+paidmodels
 Playright
+notegpt
