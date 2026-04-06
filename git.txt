@@ -5,10 +5,8 @@ private and public key- Private key is just for our pc where as public key is fo
 
 
 
-
-
-
-
+sshkey-security 
+remote repo-repo same
 
 
 
@@ -20,3 +18,23 @@ gitignore-it doesn't track the otherwise pushed git codes, only the part where g
 public/private key:Enter file in which to save the key (C:\Users\Ismri/.ssh/id_ed25519): 
 
 public key to access github 
+
+
+
+
+git init .
+git add .
+git status 
+gitignore
+git commit -m "...."
+// encrytpted and stored in .git
+
+git remote add origin // ssh url
+git remote -v // variable name list for example: origin
+git remote remove origin // removes variable name
+
+git branch
+git branch -M // rename branch 
+
+git push origin main 
+
