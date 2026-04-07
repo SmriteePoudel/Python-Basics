@@ -112,4 +112,5 @@ print(teacher)
 # Sort
 teacher = ["Hari", "Om", "Ravi", "Ravi"]
 teacher.sort()
+teacher.sort(reverse=True)
 print(teacher)

@@ -34,7 +34,12 @@ git remote -v // variable name list for example: origin
 git remote remove origin // removes variable name
 
 git branch
+git checkout branch // change branch
 git branch -M // rename branch 
 
 git push origin main 
 
+git clone // clone's ssh link 
+git help - a 
+
+CI/CD-
