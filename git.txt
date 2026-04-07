@@ -48,4 +48,4 @@ git branch // branch name
 git checkout // branch name 
 
 
-
+git help //List of git commands
