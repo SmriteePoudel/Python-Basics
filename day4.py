@@ -62,7 +62,7 @@ print(data[1:4])  # From 2 index to 3
 """ Remove
 del-Removes Everything, must require index
 remove= removes value
-pop 
+pop = access data from last as well as from indexing
 clear
 
 
@@ -114,3 +114,10 @@ teacher = ["Hari", "Om", "Ravi", "Ravi"]
 teacher.sort()
 teacher.sort(reverse=True)
 print(teacher)
+
+#Nested_List 
+data = [1, 2, 3, 4, 5, 6, 7, 8,[4,5,6,70],"smriti"]
+print(data)
+print(data[-1])
+print(data[-1][-1])
+
