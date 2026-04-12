@@ -42,3 +42,4 @@ git push origin main
 git clone // clone's ssh link 
 git help - a 
 
+branch -D //branchname

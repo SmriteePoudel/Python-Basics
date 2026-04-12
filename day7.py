@@ -95,3 +95,8 @@ for i in a:
         count = count+1
 print(count)
 
+#Random
+b="Smritee","Test"
+for i in b:
+    print(i)   
+

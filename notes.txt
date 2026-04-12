@@ -80,3 +80,23 @@ Pull request:
 ---Break & Continue-----
 --------
 1. Various cases present such as lower upper 
+
+a=["hi","hey","bye"]
+print(random.choice(a))
+
+
+-------Tuples-------
+1.Immutable
+2.Similar to list but uses this()
+3.Methods arent used
+4.Data are kept in Index and accessed accordingly
+5.Dupe allowed
+
+---Set---
+1.Immutable
+2.No method can be used
+3. Each time different order
+4.Doesnt support dupe
+5. Written in {}
+6. Can be used in Loop 
+
