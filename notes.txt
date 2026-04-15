@@ -100,3 +100,23 @@ print(random.choice(a))
 5. Written in {}
 6. Can be used in Loop 
 
+---Functions---
+1.return add, a, b,c and return [add,a,b,c] is different thing
+Local variable, global variable
+2. to make local variable global 
+a=1
+def testing():
+  a=[1,2,3,4]
+  global datas
+
+  datas=100
+print(datas)
+
+
+Default value
+1. Only last value can be default value
+
+Arbitary Positional 
+1.*args ,*kwargs
+2. Multiple data at the same time
+
