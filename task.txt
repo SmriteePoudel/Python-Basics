@@ -2,4 +2,4 @@
 2.rock,paper-assign value to each then compare 
 OR 
 if condition rakhni ani != ra and condition rakhdai compare garni 
-
+Solve yesterday's question using function not loop 

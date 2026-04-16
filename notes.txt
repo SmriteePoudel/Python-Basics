@@ -120,3 +120,5 @@ Arbitary Positional
 1.*args ,*kwargs
 2. Multiple data at the same time
 
+Hierarchy 
+Positional argument - arbitary args - kwargs
