@@ -32,14 +32,30 @@ class Parent:
 
 
 class Child(Parent):
-    def __init__(self):
+    def __init__(self,a,b):
         print("this is from child class")
-        super().__init__()
+        super().__init__(a,b)
             # super() is used to call the constructor of parent class
 
     def result(self):
         return self.add()
 
 
-obj = Child()
+obj = Child(1,2)
 print(obj.result())
+
+
+
+#Multiple Inheritance
+
+class GrandParent(Child):
+    def summary(self):
+        return "this is from grand parent class all summary data"
+obj=GrandParent()
+print(obj.summary())    
+
+
+
+  
+              
+     

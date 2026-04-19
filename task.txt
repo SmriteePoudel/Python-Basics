@@ -8,3 +8,5 @@ Solve yesterday's question using function not loop
 @StaticMethod vs @class method -vvIP
 
 @-decorator function/wrapper function* one func wraps another func
+
+Multiple Inheritance 
