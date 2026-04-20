@@ -122,3 +122,10 @@ Arbitary Positional
 
 Hierarchy 
 Positional argument - arbitary args - kwargs
+
+MRO- Multiple class auda kun lai priority dini
+Data Access Modifier - Encapsulation 
+
+__a=1==private
+_a=1==protected
+
