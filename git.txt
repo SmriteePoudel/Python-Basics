@@ -43,3 +43,6 @@ git clone // clone's ssh link
 git help - a 
 
 branch -D //branchname
+git stash pop 
+git rebase  
+--force--with lease

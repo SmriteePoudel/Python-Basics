@@ -2,7 +2,7 @@
 class Account:
     def __init__(self):
         self.__accountNumber = 0  
-        self.__balance = 0         
+        self.__balance = 0.0        
 
     def setAccount(self):
         self.__accountNumber = input("Enter Account Number: ")
@@ -15,7 +15,7 @@ class Account:
         return self.__balance
 
     def displayAccount(self):
-        print("\n--- Account Info ---")
+        print(" Account Info ")
         print("Account Number:", self.__accountNumber)
         print("Balance:", self.__balance)
 
@@ -24,7 +24,7 @@ class Account:
 class SavingsAccount(Account):
     def __init__(self):
         super().__init__()
-        self.__interestRate = 0
+        self.__interestRate = 0.0
         self.__interest = 0
 
     def setSavingsDetails(self):
@@ -40,7 +40,7 @@ class SavingsAccount(Account):
         return self.__interest
 
     def displaySavings(self):
-        print("\n--- Savings Info ---")
+        print("--- Savings Info ---")
         print("Interest:", self.__interest)
 
 
@@ -73,7 +73,6 @@ class PremiumSavings(SavingsAccount):
 
 
 obj = PremiumSavings()
-
 obj.setAccount()
 obj.setSavingsDetails()
 obj.calculateInterest()
@@ -84,3 +83,8 @@ obj.displayAccount()
 obj.displaySavings()
 obj.displayPremiumDetails()
 obj.checkStatus()
+
+
+
+
+#EKuta child class ko matra object use garera garni 
