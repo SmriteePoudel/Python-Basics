@@ -1,12 +1,8 @@
-# Class 1: Account
-class Account:
-    def __init__(self):
-        self.__accountNumber = 0  
-        self.__balance = 0.0        
 
-    def setAccount(self):
-        self.__accountNumber = input("Enter Account Number: ")
-        self.__balance = float(input("Enter Initial Balance: "))
+class Account:
+    def __init__(self, accountNumber, balance):
+        self.__accountNumber = accountNumber
+        self.__balance = balance
 
     def deposit(self, amount):
         self.__balance = self.__balance + amount
@@ -15,23 +11,18 @@ class Account:
         return self.__balance
 
     def displayAccount(self):
-        print(" Account Info ")
+        print("Account Info")
         print("Account Number:", self.__accountNumber)
         print("Balance:", self.__balance)
 
 
-
 class SavingsAccount(Account):
-    def __init__(self):
-        super().__init__()
-        self.__interestRate = 0.0
+    def __init__(self, accountNumber, balance, interestRate):
+        super().__init__(accountNumber, balance)
+        self.__interestRate = interestRate
         self.__interest = 0
 
-    def setSavingsDetails(self):
-        self.__interestRate = float(input("Enter Interest Rate: "))
-
     def calculateInterest(self):
-        
         balance = self.getBalance()
         self.__interest = (balance * self.__interestRate) / 100
         return self.__interest
@@ -40,18 +31,16 @@ class SavingsAccount(Account):
         return self.__interest
 
     def displaySavings(self):
-        print("--- Savings Info ---")
+        print("Savings Info")
         print("Interest:", self.__interest)
 
 
+# Class 3: PremiumSavings
 class PremiumSavings(SavingsAccount):
-    def __init__(self):
-        super().__init__()
-        self.__bonus = 0
+    def __init__(self, accountNumber, balance, interestRate, bonus):
+        super().__init__(accountNumber, balance, interestRate)
+        self.__bonus = bonus
         self.__totalBalance = 0
-
-    def setBonus(self):
-        self.__bonus = float(input("Enter Bonus: "))
 
     def calculateTotalBalance(self):
         balance = self.getBalance()
@@ -66,25 +55,18 @@ class PremiumSavings(SavingsAccount):
             print("Regular Customer")
 
     def displayPremiumDetails(self):
-        print("--- Premium Info ---")
+        print("Premium Info")
         print("Bonus:", self.__bonus)
         print("Total Balance:", self.__totalBalance)
 
 
 
-obj = PremiumSavings()
-obj.setAccount()
-obj.setSavingsDetails()
+obj = PremiumSavings(101, 15000, 10, 2000)
+
 obj.calculateInterest()
-obj.setBonus()
 obj.calculateTotalBalance()
 
 obj.displayAccount()
 obj.displaySavings()
 obj.displayPremiumDetails()
 obj.checkStatus()
-
-
-
-
-#EKuta child class ko matra object use garera garni 

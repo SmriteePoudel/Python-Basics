@@ -1,0 +1,9 @@
+{
+    "name": "day20",
+    "description": "A simple JSON file to store metadata about the day20 script.",
+    "version": "1.0.0",
+    "author": "Ismri",
+    "license": "MIT"
+
+   
+}
