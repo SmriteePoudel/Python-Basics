@@ -47,3 +47,8 @@ with open("data.csv", "r") as file:
 
     for index, row in enumerate(reader):
         print(index + 1, row)
+
+
+#Write to csv file
+import csv
+data=[["name","age","address"],["Ismri", 25, "Kathmandu"],["Suman", 30, "Lalitpur"]]

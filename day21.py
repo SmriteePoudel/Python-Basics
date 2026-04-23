@@ -29,11 +29,22 @@ else:
 
 
 
+from tabulate import tabulate
 
-url = "https://www.nrb.org.np/api/forex/v1/rates?page=1&per_page=1&from=2025-03-03&to=2025-03-05"
+url = "https://www.nrb.org.np/api/forex/v1/rates?page=1&per_page=10&from=2025-03-01&to=2025-03-10"
+while True:
+    r = requests.get(url=url)
+    if r.status_code ==200:
+        result = r.json()['data']['payload']
+        for i in result:
+            print(i['date'])
+            for j in i['rates']:
+                print(j)
+              
+        pagination = r.json()['pagination']
+        if pagination.get('next') is None:
+            break
+        url =  pagination.get('next')
+    else:
+        break
 
-r = requests.get(url=url)
-if r.status_code ==200:
- print(r)    
-
-result=r.json() 
