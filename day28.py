@@ -15,3 +15,25 @@ c = Cat()
 
 d.make_sound()
 c.make_sound()
+
+
+
+
+#Payment system 
+class Payment:
+    def pay(self):
+        print("Choose payment method")
+
+class Esewa(Payment):
+    def pay(self):
+        print("Payment done using eSewa")
+
+class Khalti(Payment):
+    def pay(self):
+        print("Payment done using Khalti")
+
+e = Esewa()
+k = Khalti()
+
+e.pay()
+k.pay()
